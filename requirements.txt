@@ -1,2 +1,4 @@
 boto3
 fake_web_events
+jinja2
+pyaml

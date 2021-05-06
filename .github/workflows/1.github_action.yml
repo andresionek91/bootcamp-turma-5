@@ -3,7 +3,7 @@ name: Deploy Bucket
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   test:
