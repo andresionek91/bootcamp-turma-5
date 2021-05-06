@@ -1,0 +1,23 @@
+Description: Cria bucket no S3
+
+Resources:
+
+  BucketBeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: bucket-belisco-turma-5
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+
+  Bucket2BeliscoS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: segundo-bucket-belisco-turma-5
